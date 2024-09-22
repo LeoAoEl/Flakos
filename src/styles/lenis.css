@@ -1,24 +1,27 @@
-html.lenis,
-html.lenis body {
-  height: auto;
-  overflow: hidden; /* Oculta la barra de desplazamiento */
-}
+/* Oculta la barra de desplazamiento solo en pantallas grandes */
+@media (min-width: 768px) {
+  html.lenis,
+  html.lenis body {
+    height: auto;
+    overflow: hidden; /* Oculta la barra de desplazamiento en desktop */
+  }
 
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-  overflow: hidden; /* Oculta la barra de desplazamiento */
-}
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+    overflow: hidden; /* Oculta la barra de desplazamiento en desktop */
+  }
 
-.lenis.lenis-stopped {
-  overflow: hidden;
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
 }
 
 /* Oculta la barra de desplazamiento para todos los elementos */
-.lenis * {
+html.lenis * {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
 
-.lenis *::-webkit-scrollbar {
+html.lenis *::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
