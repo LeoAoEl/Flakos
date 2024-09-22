@@ -1,0 +1,21 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import Banner from "@components/Common/Banner.astro";
+import PhotoSwipe from "@components/Common/PhotoSwipe.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Banner
+    title="Hostel Flakos Experience"
+    className="h-44 md:h-96 bg-homeBanner"
+  />
+  <Container className="py-8">
+    <p class="text-2xl text-center text-textColor">
+      Galería de las diversas actividades que puedes realizar al hospedarte en <span
+        class="text-naranja">Hostel Flakos</span
+      >
+    </p>
+    <PhotoSwipe imageFolder="ejemplo" />
+  </Container>
+</Layout>

@@ -1,0 +1,30 @@
+---
+import { Image } from "astro:assets";
+interface Props {
+  imagen: ImageMetadata;
+  subTitle: string;
+}
+const { imagen, subTitle } = Astro.props;
+---
+
+<div
+  class="relative w-96 h-72 md:h-96 overflow-hidden rounded-lg shadow-lg bg-cover bg-center"
+>
+  <!-- Imagen de fondo -->
+  <Image
+    src={imagen}
+    alt={subTitle}
+    quality={"low"}
+    loading={"lazy"}
+    class="w-full h-full object-cover drop-shadow-xl"
+  />
+
+  <!-- Texto superpuesto -->
+  <div
+    class="absolute inset-x-0 bottom-0 bg-naranja bg-opacity-20 flex items-center justify-center p-4"
+  >
+    <div class="text-white text-center">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold">{subTitle}</h2>
+    </div>
+  </div>
+</div>

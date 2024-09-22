@@ -1,0 +1,13 @@
+---
+import { Image } from "astro:assets";
+import logo from "@assets/img/logo.avif";
+---
+
+<div class="md:mt-8 flex items-center justify-center flex-col">
+  <Image src={logo} alt="logo" class="w-32 h-32 rounded-xl shadow-lg" />
+  <p class="text-center text-amarillo text-xl md:text-4xl">
+    <span class="text-rojo"> Chill </span>-
+    <span class="text-naranja"> Surf</span>-
+    <span class="text-verde">Repeat</span>
+  </p>
+</div>

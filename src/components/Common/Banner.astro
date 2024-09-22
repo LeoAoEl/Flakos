@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  className?: string;
+  content?: boolean;
+}
+const {
+  title,
+  className = "md:min-h-screen md:h-screen h-96 bg-homeBanner",
+  content = false,
+} = Astro.props;
+---
+
+<section
+  class={`px-8 text-white gap-4 lg:bg-fixed sm:bg-scroll  md:bg-fixed justify-center  bg-center bg-cover flex flex-col items-center ${className}`}
+>
+  <h1
+    class="text-4xl md:text-7xl font-semibold px-4 md:px-8 mx-auto max-w-[1400px]
+text-center justify-center text-pretty"
+  >
+    {title}
+  </h1>
+  {content ? <slot /> : ""}
+</section>

@@ -1,0 +1,49 @@
+---
+import { Image } from "astro:assets";
+interface Props {
+  imagen: ImageMetadata;
+  subTitle: string;
+  body: string;
+  body2?: string;
+  className?: string;
+}
+const {
+  imagen,
+  subTitle,
+  body,
+  body2,
+  className = "md:flex-row flex-col",
+} = Astro.props;
+---
+
+<div
+  class={`flex  items-center justify-between gap-6 py-6 lg:py-10 ${className}`}
+>
+  <div class="w-full md:w-1/2 mb-8 md:mb-0">
+    <Image
+      src={imagen}
+      alt={subTitle}
+      loading={"eager"}
+      class="w-full h-auto rounded-xl shadow-lg"
+    />
+  </div>
+  <div class="w-full md:w-1/2">
+    <h2
+      class="text-3xl md:text-6xl underline underline-offset-8 font-extrabold text-texto mb-4 leading-tight text-center text-naranja md:mb-8"
+    >
+      {subTitle}
+    </h2>
+    <p class="text-textColor leading-relaxed mb-6 text-lg md:text-xl">
+      {body}
+    </p>
+    {
+      body2 ? (
+        <p class=" text-textColor md:text-xl text-lg leading-relaxed mb-6">
+          {body2}
+        </p>
+      ) : (
+        ""
+      )
+    }
+  </div>
+</div>

@@ -1,0 +1,36 @@
+---
+import RCard from "./RCard.astro";
+import image1 from "@assets/img/Glamping.avif";
+import image2 from "@assets/img/cabana.avif";
+import Button from "@components/Common/Button.astro";
+
+import {
+  getLangFromUrl,
+  useTranslatedPath,
+  useTranslations,
+} from "@i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+<main class="py-10">
+  <div class="flex items-center justify-center mb-8">
+    <span class="text-textColor text-3xl md:text-6xl"
+      >Agenda tú proximo viaje</span
+    >
+  </div>
+  <section class="flex md:flex-row mx-auto gap-4 md:gap-16 justify-center">
+    <RCard imagen={image1} subTitle="Glamping" />
+    <RCard imagen={image2} subTitle="Bungalow" />
+  </section>
+  <section class="text-center text-xl mt-8 flex flex-col items-center">
+    <span class="mb-2"
+      >Conoce los maravillosos rooms de <span class="text-naranja"
+        >Hostel Flakos</span
+      >
+    </span>
+    <Button title="Visitar" route={translatePath("/rooms/")} />
+  </section>
+</main>

@@ -1,0 +1,82 @@
+---
+import { Astronav, MenuIcon, MenuItems, StickyHeader } from "astro-navbar";
+import SwitchLanguague from "./Common/SwitchLanguague.astro";
+import {
+  getLangFromUrl,
+  useTranslatedPath,
+  useTranslations,
+} from "@i18n/utils";
+import Container from "@components/Container.astro";
+import NavLink from "./Common/NavLink.astro";
+import logo from "@assets/img/logo.avif";
+import { Image } from "astro:assets";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+---
+
+<StickyHeader
+  class="shadow-md p-5 gap-6 text-texto z-20 top-0 transition-all w-full ease-in-out text-textColor"
+  scrollY={100}
+  defaultClass=""
+  activeClass="shadow-xl "
+>
+  <Container>
+    <Astronav closeOnClick>
+      <div
+        class="flex justify-between items-center flex-col lg:flex-row relative w-full"
+      >
+        <div
+          class="flex w-full lg:w-auto items-center justify-center lg:justify-between"
+        >
+          <a
+            href={translatePath("/")}
+            class="text-2xl text-textColor flex items-center transition-all rounded-full px-2 -ml-2"
+          >
+            <Image
+              alt="logo"
+              src={logo}
+              class="w-12 h-auto mr-2"
+              quality={"low"}
+              loading={"eager"}
+              format="avif"
+            />
+
+            <span class="text-texto">Chill - </span> Surf - <span class=""
+              >Repeat</span
+            >
+          </a>
+          <div class="block lg:hidden ml-4 pt-4">
+            <MenuIcon class="w-8 h-8 text-texto" />
+          </div>
+        </div>
+        <MenuItems class="hidden lg:flex lg:items-center lg:w-auto">
+          <ul class="flex flex-col lg:flex-row lg:gap-8 items-center">
+            <NavLink title={t("nav.index")} path={translatePath("/")} />
+
+            <NavLink title={t("nav.rooms")} path={translatePath("/rooms/")} />
+            <NavLink title={t("nav.about")} path={translatePath("/about/")} />
+            <NavLink
+              title={t("nav.gallery")}
+              path={translatePath("/gallery/")}
+            />
+            <NavLink
+              title={t("nav.experiences")}
+              path={translatePath("/experiences/")}
+            />
+
+            <SwitchLanguague />
+          </ul>
+          <div class="md:ml-8"></div>
+        </MenuItems>
+      </div>
+    </Astronav>
+  </Container>
+</StickyHeader>
+
+<style is:global>
+  .astronav-dropdown:hover .dropdown-toggle {
+    display: block;
+  }
+</style>

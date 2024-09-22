@@ -1,0 +1,29 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import Banner from "@components/Common/Banner.astro";
+import Contact from "@components/home/Contact.astro";
+import Carousel from "@components/Common/Carousel.tsx";
+import Cultural from "@components/home/Cultural.astro";
+import MV from "@components/home/M&V.astro";
+import RoomsCard from "@components/home/RoomsCard.astro";
+import BannerContent from "@components/home/BannerContent.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Banner
+    title="Increible Hostel with Bungalow and Glamping rooms"
+    content={true}
+  >
+    <BannerContent />
+  </Banner>
+  <Container>
+    <RoomsCard />
+    <MV />
+  </Container>
+  <Cultural />
+  <Container>
+    <Carousel imageFolder="ejemplo" client:load />
+  </Container>
+  <Contact />
+</Layout>

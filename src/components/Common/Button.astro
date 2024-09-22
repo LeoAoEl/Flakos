@@ -1,0 +1,14 @@
+---
+interface Props {
+  className?: string;
+  title: string;
+  route: string;
+}
+const { className, title, route } = Astro.props;
+---
+
+<a
+  href={route}
+  class={`bg-naranja/80 text-white text-xl font-bold p-4 rounded-lg transition-all animate-pulse hover:animate-none hover:bg-naranja ${className}`}
+  >{title}</a
+>
