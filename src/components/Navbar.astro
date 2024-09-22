@@ -32,7 +32,7 @@ const translatePath = useTranslatedPath(lang);
         >
           <a
             href={translatePath("/")}
-            class="text-2xl text-textColor flex items-center transition-all rounded-full px-2 -ml-2"
+            class="text-xl md:text-2xl text-textColor flex items-center transition-all rounded-full px-2 -ml-2"
           >
             <Image
               alt="logo"
@@ -42,10 +42,12 @@ const translatePath = useTranslatedPath(lang);
               loading={"eager"}
               format="avif"
             />
-
-            <span class="text-texto">Chill - </span> Surf - <span class=""
-              >Repeat</span
-            >
+            <span class="block md:hidden">
+              <span class="text-textColor">Hostel FLAKOS</span>
+            </span>
+            <span class="hidden md:block">
+              <span>Chill - Surf - Repeat</span>
+            </span>
           </a>
           <div class="block lg:hidden ml-4 pt-4">
             <MenuIcon class="w-8 h-8 text-texto" />
