@@ -1,0 +1,26 @@
+---
+title: "Familiar"
+slug: "familiar"
+description: "Una carpa espaciosa para familias, con todas las comodidades modernas y rodeada de naturaleza."
+image: "../images/cabana.avif"
+type: "Glamping"
+gallery: "ejemplo"
+beds: "1 cama King, 2 camas individuales"
+bathrooms: "1 baño completo"
+parking: "2 espacios"
+extras:
+  wifi: "Incluido"
+  showers: "Agua caliente"
+  laundry: "Lavandería compartida"
+  air_conditioning: "Aire acondicionado disponible"
+  coffee_maker: "Cafetera incluida"
+  tv: "Televisión de pantalla plana"
+  fridge: "Refrigerador"
+  dishwasher: "No disponible"
+  kitchen: "Cocina pequeña"
+  washing_machine: "Lavadora compartida"
+prices:
+  peak: "240"
+  regular: "200"
+  special: "180"
+---

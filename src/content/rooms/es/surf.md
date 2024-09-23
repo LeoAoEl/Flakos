@@ -1,0 +1,26 @@
+---
+slug: "surf"
+title: "Surf"
+description: "Una habitación acogedora con vistas al mar, perfecta para surfistas."
+image: "../images/cabana.avif"
+type: "Bungalow"
+gallery: "ejemplo"
+beds: "1 cama Queen"
+bathrooms: "1 baño completo"
+parking: "1 espacio"
+extras:
+  wifi: "Incluido"
+  showers: "Agua caliente"
+  laundry: "Lavandería compartida"
+  air_conditioning: "Aire acondicionado disponible"
+  coffee_maker: "Cafetera incluida"
+  tv: "Televisión de pantalla plana"
+  fridge: "Mini nevera"
+  dishwasher: "No disponible"
+  kitchen: "No disponible"
+  washing_machine: "Lavadora compartida"
+prices:
+  peak: "180"
+  regular: "150"
+  special: "120"
+---

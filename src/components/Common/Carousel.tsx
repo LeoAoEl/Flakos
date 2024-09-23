@@ -61,12 +61,12 @@ export default function AutoSwipe({ imageFolder }: Props) {
           disabledClass: "swiper-button-disabled",
         }}
         modules={[Autoplay, Navigation, Pagination, Keyboard]}
-        className="h-96 transition-all ease-in"
+        className="h-96 transition-all ease-in rounded-l-xl"
       >
         {images.map((src, index) => (
           <SwiperSlide
             key={index}
-            className="flex justify-center items-center place-content-center transition-all"
+            className="flex justify-center items-center place-content-center transition-all rounded-xl ease-in"
           >
             <img
               src={src}

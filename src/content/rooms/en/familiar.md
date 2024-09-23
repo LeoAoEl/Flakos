@@ -1,0 +1,26 @@
+---
+slug: "family"
+title: "Family"
+description: "A spacious tent for families, with all modern amenities and surrounded by nature."
+image: "../images/cabana.avif"
+type: "Glamping"
+gallery: "example"
+beds: "1 King bed, 2 single beds"
+bathrooms: "1 full bathroom"
+parking: "2 spaces"
+extras:
+  wifi: "Included"
+  showers: "Hot water"
+  laundry: "Shared laundry"
+  air_conditioning: "Air conditioning available"
+  coffee_maker: "Coffee maker included"
+  tv: "Flat-screen TV"
+  fridge: "Refrigerator"
+  dishwasher: "Not available"
+  kitchen: "Small kitchen"
+  washing_machine: "Shared washing machine"
+prices:
+  peak: "240"
+  regular: "200"
+  special: "180"
+---

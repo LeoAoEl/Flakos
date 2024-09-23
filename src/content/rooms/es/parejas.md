@@ -1,0 +1,26 @@
+---
+slug: "parejas"
+title: "Parejas"
+description: "Un glamping romántico para parejas, ideal para desconectar y disfrutar de la privacidad."
+image: "../images/cabana.avif"
+type: "Glamping"
+gallery: "ejemplo"
+beds: "1 cama Queen"
+bathrooms: "1 baño completo"
+parking: "1 espacio"
+extras:
+  wifi: "Incluido"
+  showers: "Agua caliente"
+  laundry: "No disponible"
+  air_conditioning: "Aire acondicionado disponible"
+  coffee_maker: "Cafetera incluida"
+  tv: "Televisión de pantalla plana"
+  fridge: "Mini nevera"
+  dishwasher: "No disponible"
+  kitchen: "No disponible"
+  washing_machine: "No disponible"
+prices:
+  peak: "220"
+  regular: "180"
+  special: "150"
+---

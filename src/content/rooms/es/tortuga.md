@@ -1,0 +1,26 @@
+---
+slug: "tortuga"
+title: "Tortuga"
+description: "Habitación rústica con decoración natural, ideal para relajarse cerca de la naturaleza."
+image: "../images/cabana.avif"
+type: "Bungalow"
+gallery: "ejemplo"
+beds: "2 camas individuales"
+bathrooms: "1 baño completo"
+parking: "2 espacios"
+extras:
+  wifi: "Incluido"
+  showers: "Agua caliente"
+  laundry: "Lavandería compartida"
+  air_conditioning: "Aire acondicionado disponible"
+  coffee_maker: "Cafetera incluida"
+  tv: "Televisión de pantalla plana"
+  fridge: "Mini nevera"
+  dishwasher: "No disponible"
+  kitchen: "No disponible"
+  washing_machine: "Lavadora compartida"
+prices:
+  peak: "160"
+  regular: "130"
+  special: "110"
+---

@@ -1,0 +1,26 @@
+---
+title: "Dormitorios"
+slug: "dormitorios"
+description: "Glamping económico con dormitorios compartidos, ideal para aventureros."
+image: "../images/cabana.avif"
+type: "Glamping"
+gallery: "ejemplo"
+beds: "4 camas individuales"
+bathrooms: "Baño compartido"
+parking: "1 espacio"
+extras:
+  wifi: "Incluido"
+  showers: "Agua caliente"
+  laundry: "No disponible"
+  air_conditioning: "No disponible"
+  coffee_maker: "Cafetera compartida"
+  tv: "No disponible"
+  fridge: "Mini nevera compartida"
+  dishwasher: "No disponible"
+  kitchen: "No disponible"
+  washing_machine: "No disponible"
+prices:
+  peak: "130"
+  regular: "100"
+  special: "90"
+---

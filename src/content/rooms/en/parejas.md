@@ -1,0 +1,26 @@
+---
+slug: "couples"
+title: "Couples"
+description: "A romantic glamping for couples, ideal for disconnecting and enjoying privacy."
+image: "../images/cabana.avif"
+type: "Glamping"
+gallery: "example"
+beds: "1 Queen bed"
+bathrooms: "1 full bathroom"
+parking: "1 space"
+extras:
+  wifi: "Included"
+  showers: "Hot water"
+  laundry: "Not available"
+  air_conditioning: "Air conditioning available"
+  coffee_maker: "Coffee maker included"
+  tv: "Flat-screen TV"
+  fridge: "Mini fridge"
+  dishwasher: "Not available"
+  kitchen: "Not available"
+  washing_machine: "Not available"
+prices:
+  peak: "220"
+  regular: "180"
+  special: "150"
+---
