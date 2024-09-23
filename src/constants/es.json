@@ -1,0 +1,31 @@
+{
+    "SEO": {
+        "home": {
+            "title": "FLAKOS Hostel - Tu Hogar en Playa Blanca",
+            "description": "Hostel Flakos es un paraíso en Playa Blanca, que ofrece estancias asequibles, surf, relax en la playa y experiencias únicas con perros locales.",
+            "url": "https://flakos.vercel.app/es/",
+            "image": "/images/home-banner.jpg",
+            "keywords": "Hostel, Playa Blanca, Zihuatanejo, surf, naturaleza, perros, hospedaje, experiencias"
+        },
+        "rooms": {
+            "title": "Habitaciones - FLAKOS Hostel",
+            "url": "https://flakos.vercel.app/es/rooms",
+            "keywords": "Hostel, Playa Blanca, Zihuatanejo, habitaciones, hospedaje económico, naturaleza"
+        },
+        "about": {
+            "title": "Sobre Nosotros - FLAKOS Hostel",
+            "url": "https://flakos.vercel.app/es/about",
+            "keywords": "Hostel, Playa Blanca, Zihuatanejo, misión, perros, naturaleza"
+        },
+        "gallery": {
+            "title": "Galería - FLAKOS Hostel",
+            "url": "https://flakos.vercel.app/es/gallery",
+            "keywords": "Hostel, Playa Blanca, Zihuatanejo, galería, naturaleza, hospedaje"
+        },
+        "experiences": {
+            "title": "Experiencias - FLAKOS Hostel",
+            "url": "https://flakos.vercel.app/es/experiences",
+            "keywords": "Hostel, Playa Blanca, Zihuatanejo, experiencias, naturaleza, surf, snorkel, perros"
+        }
+    }
+}

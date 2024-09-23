@@ -3,9 +3,14 @@ import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
 import Banner from "@components/Common/Banner.astro";
 import ExpCard from "@components/experiences/ExpCard.astro";
+import { getI18N } from "@i18n/index";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { title, keywords, url } = i18n.SEO.experiences;
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={title} url={url} keywords={keywords}>
   <Banner title="Experiences" className="h-44 md:h-96 bg-homeBanner" />
   <Container>
     <ExpCard
