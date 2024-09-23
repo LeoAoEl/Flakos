@@ -1,10 +1,28 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
+import Banner from "@components/Common/Banner.astro";
+import { getCollection } from "astro:content";
+import RoomCard from "@components/rooms/RoomCard.astro";
+
+interface Props {
+  lan: string;
+}
+const { lan } = Astro.props;
+
+const rooms = await getCollection("rooms", ({ id }) => {
+  return id.startsWith(`${lan}`);
+});
 ---
 
 <Layout title="Welcome to Astro.">
+  <Banner title="All Rooms" className="h-44 md:h-96 bg-homeBanner" />
   <Container>
-    <h1>All Rooms</h1>
+    <section
+      aria-label=" All rooms"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-8 items-center md:flex-row flex-col"
+    >
+      {rooms.map((room) => <RoomCard room={room} />)}
+    </section>
   </Container>
 </Layout>

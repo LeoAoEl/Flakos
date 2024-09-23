@@ -1,0 +1,26 @@
+---
+slug: "turtle"
+title: "Tortuga"
+description: "Rustic room with natural decor, ideal for relaxing close to nature."
+image: "../images/cabana.avif"
+type: "Bungalow"
+gallery: "example"
+beds: "2 single beds"
+bathrooms: "1 full bathroom"
+parking: "2 spaces"
+extras:
+  wifi: "Included"
+  showers: "Hot water"
+  laundry: "Shared laundry"
+  air_conditioning: "Air conditioning available"
+  coffee_maker: "Coffee maker included"
+  tv: "Flat-screen TV"
+  fridge: "Mini fridge"
+  dishwasher: "Not available"
+  kitchen: "Not available"
+  washing_machine: "Shared washing machine"
+prices:
+  peak: "160"
+  regular: "130"
+  special: "110"
+---

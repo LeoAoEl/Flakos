@@ -1,0 +1,26 @@
+---
+slug: "dormitories"
+title: "Dormitories"
+description: "Budget-friendly glamping with shared dormitories, ideal for adventurers."
+image: "../images/cabana.avif"
+type: "Glamping"
+gallery: "example"
+beds: "4 single beds"
+bathrooms: "Shared bathroom"
+parking: "1 space"
+extras:
+  wifi: "Included"
+  showers: "Hot water"
+  laundry: "Not available"
+  air_conditioning: "Not available"
+  coffee_maker: "Shared coffee maker"
+  tv: "Not available"
+  fridge: "Shared mini fridge"
+  dishwasher: "Not available"
+  kitchen: "Not available"
+  washing_machine: "Not available"
+prices:
+  peak: "130"
+  regular: "100"
+  special: "90"
+---

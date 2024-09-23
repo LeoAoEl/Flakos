@@ -1,0 +1,97 @@
+---
+import Tv from "@assets/icons/rooms/Tv.astro";
+import Bed from "@assets/icons/rooms/Bed.astro";
+import Bungalow from "@assets/icons/rooms/Bungalow.astro";
+import Coffe from "@assets/icons/rooms/Coffe.astro";
+import DishWash from "@assets/icons/rooms/DishWash.astro";
+import Fridge from "@assets/icons/rooms/Fridge.astro";
+import AirC from "@assets/icons/rooms/AirC.astro";
+import Glamping from "@assets/icons/rooms/Glamping.astro";
+import Kitchen from "@assets/icons/rooms/Kitchen.astro";
+import Laundry from "@assets/icons/rooms/Laundry.astro";
+import Parking from "@assets/icons/rooms/Parking.astro";
+import Pet from "@assets/icons/rooms/Pet.astro";
+import Shower from "@assets/icons/rooms/Shower.astro";
+import Wifi from "@assets/icons/rooms/Wifi.astro";
+---
+
+<section class="py-10">
+  <h2 class="text-2xl text-textColor font-bold mb-4">
+    Lo que ofrece este lugar
+  </h2>
+
+  <!-- Amenidades en tres columnas, responsive -->
+  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <!-- Cama -->
+    <div class="flex items-center">
+      <Bed />
+      <p class="ml-2">Cama</p>
+    </div>
+
+    <!-- Estacionamiento -->
+    <div class="flex items-center">
+      <Parking />
+      <p class="ml-2">Estacionamiento</p>
+    </div>
+
+    <!-- Wifi -->
+    <div class="flex items-center">
+      <Wifi />
+      <p class="ml-2">Wifi</p>
+    </div>
+
+    <!-- Cocina -->
+    <div class="flex items-center">
+      <Kitchen />
+      <p class="ml-2">Cocina</p>
+    </div>
+
+    <!-- Lavadora -->
+    <div class="flex items-center">
+      <Laundry />
+      <p class="ml-2">Lavadora</p>
+    </div>
+
+    <!-- TV -->
+    <div class="flex items-center">
+      <Tv class="w-6 h-6 text-red-500" />
+      <p class="ml-2">TV</p>
+    </div>
+
+    <!-- Aire acondicionado -->
+    <div class="flex items-center">
+      <AirC />
+      <p class="ml-2">Aire acondicionado</p>
+    </div>
+
+    <!-- Cafetera -->
+    <div class="flex items-center">
+      <Coffe class="w-6 h-6 text-brown-500" />
+      <p class="ml-2">Cafetera</p>
+    </div>
+
+    <!-- Refrigerador -->
+    <div class="flex items-center">
+      <Fridge class="w-6 h-6 text-green-500" />
+      <p class="ml-2">Refrigerador</p>
+    </div>
+
+    <!-- Bungalow -->
+    <div class="flex items-center">
+      <Bungalow class="w-6 h-6 text-yellow-500" />
+      <p class="ml-2">Bungalow</p>
+    </div>
+
+    <!-- Glamping -->
+    <div class="flex items-center">
+      <Glamping class="w-6 h-6 text-purple-500" />
+      <p class="ml-2">Glamping</p>
+    </div>
+
+    <!-- Ducha -->
+    <div class="flex items-center">
+      <Shower />
+      <p class="ml-2">Ducha</p>
+    </div>
+  </div>
+</section>
