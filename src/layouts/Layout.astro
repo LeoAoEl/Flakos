@@ -2,23 +2,43 @@
 import Footer from "@components/Footer.astro";
 import Navbar from "@components/Navbar.astro";
 import { ViewTransitions } from "astro:transitions";
+import { getI18N } from "@i18n/index";
 
 interface Props {
   title: string;
-  description?: string;
+  keywords: string;
+  url: string;
 }
-
-const { title } = Astro.props;
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+const { title, keywords, url } = Astro.props;
+const { description, url: ogUrl, image, title: ogTitle } = i18n.SEO.home;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={currentLocale}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/logo.webp" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="keywords" content={keywords} />
+    <link rel="canonical" href={url} />
+
+    <!-- Open Graph Meta Tags (SEO for Social Media) -->
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:url" content={ogUrl} />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={ogTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    <meta name="twitter:url" content={ogUrl} />
     <ViewTransitions />
     <title>{title}</title>
   </head>
